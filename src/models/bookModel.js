@@ -26,6 +26,10 @@ const bookSchema = new mongoose.Schema({
         unique: true,
         trim:true
     },
+    bookCover: {
+        type: String,
+        required: 'bookCover is required.'
+    },
     category: {
         type: String,
         required: 'Category is Required',
